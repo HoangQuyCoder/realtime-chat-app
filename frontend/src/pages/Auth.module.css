@@ -1,0 +1,112 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  padding: 1rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.logoIcon { font-size: 28px; }
+
+.logoText {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--text2);
+  margin-bottom: 1.5rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  background: var(--bg3);
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.tab {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text2);
+  background: transparent;
+  transition: all .15s;
+}
+
+.tab.active {
+  background: var(--bg2);
+  color: var(--text);
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+.form { display: flex; flex-direction: column; gap: 1rem; }
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+
+.field label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text2);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.field input {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--text);
+  font-size: 14px;
+  transition: border-color .15s;
+}
+
+.field input:focus { border-color: var(--accent); }
+.field input::placeholder { color: var(--text3); }
+
+.error {
+  background: rgba(239,68,68,.1);
+  border: 1px solid rgba(239,68,68,.3);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #fca5a5;
+}
+
+.btn {
+  background: var(--accent);
+  color: #fff;
+  border-radius: 8px;
+  padding: 11px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background .15s, opacity .15s;
+  margin-top: 4px;
+}
+
+.btn:hover { background: var(--accent-hover); }
+.btn:disabled { opacity: .6; cursor: not-allowed; }

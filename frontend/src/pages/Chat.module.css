@@ -1,0 +1,58 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg2);
+  flex-shrink: 0;
+}
+
+.roomName { font-size: 15px; font-weight: 600; color: var(--text); }
+.roomDesc { font-size: 12px; color: var(--text3); margin-top: 2px; }
+
+.meta { display: flex; align-items: center; gap: 12px; }
+
+.onlinePill {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; color: var(--text2);
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  padding: 4px 10px;
+}
+
+.greenDot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+}
+
+.welcome {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--text3);
+}
+
+.welcomeIcon { font-size: 56px; opacity: .4; }
+.welcome h2 { font-size: 18px; font-weight: 600; color: var(--text2); }
+.welcome p { font-size: 13px; }
